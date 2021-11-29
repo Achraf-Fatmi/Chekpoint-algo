@@ -1,0 +1,20 @@
+ALGORITHM Sentence
+VAR
+    c:CHAR
+    l:INTEGER:=1
+    vowels,: INTEGER:=0
+    words : INTEGER:=1
+BEGIN
+Read (c)
+WHILE (c<>".") DO
+    l:=l+1;
+    IF (c=" ") THEN
+        words:= words+1;
+    END_IF
+    IF (c= "a" or c= "A" or c= "e" or c= "E" or c= "u" or c= "U" or c= "i" or c= "I" or c= "o" or c="O" c= "y" or c="Y"  ) THEN
+        vowels:= vowels+1;
+    END_IF
+END_WHILE
+write(l , words , vowels) ;   
+
+END
